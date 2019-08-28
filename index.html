@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>	
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="shortcut icon" href="images/favicon.png" /> 
+	<script src="js/jquery 3.4.1.js"></script>
+ 	<title> Prework </title>
+
+
+<style>
+
+img{
+	width: 600px;
+	height: 300px;
+	margin: 50px;
+	filter: contrast(120%) saturate(120%);
+}
+button{
+	width: 200px;
+	height: 30px;
+	border: none;
+	border-radius: 50px;
+	background:linear-gradient(rgba(255, 195, 29, 0.699), rgb(228, 98, 81, .6));
+	outline: none;
+	transition: .25s;
+	cursor: pointer;
+}
+button:hover{
+		box-shadow: 3px 3px 3px grey;
+	}
+button:active{
+	transform: scale(.95);
+	box-shadow: 2px 2px 3px lightgrey;
+
+}
+div{
+	width: 800px;;
+}
+
+</style>
+
+</head>
+	<body>
+			<div style="text-align: center">
+					<button>EL BOTON MELOCOTÓN</button>
+			</div>
+<div style="text-align: center">
+		<img src="images/aurora.jpg" alt="aurora boreal">
+		
+		<img src="images/gatogrande.jpg" alt="leopardito">
+
+	</div>
+
+<script>
+
+$("img").first().hide();
+$("button").on("click", function(){
+	$("img").slideToggle(500, function(){
+		$(this).insertBefore($("img").first());
+	});
+	
+});
+
+
+
+
+
+
+
+
+</script>
+
+
+
+	</body>	    
+</html>
